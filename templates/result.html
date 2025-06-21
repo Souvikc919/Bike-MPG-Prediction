@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .result-box {
+            background: white;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .mpg {
+            font-size: 28px;
+            color: #4CAF50;
+            margin-top: 10px;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>Predicted MPG:</h2>
+        <div class="mpg">{{ mpg }}</div>
+        <a href="/">Predict Again</a>
+    </div>
+</body>
+</html>
